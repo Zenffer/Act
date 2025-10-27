@@ -26,10 +26,10 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => '127.0.0.1',
+        'hostname'     => '10.255.255.254',
         'username'     => 'root',
         'password'     => '',
-        'database'     => 'stuAtnd_db',
+        'database'     => 'studentdb',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
@@ -41,7 +41,7 @@ class Database extends Config
         'compress'     => false,
         'strictOn'     => false,
         'failover'     => [],
-        'port'         => 3306,
+        'port'         => 3307,
         'numberNative' => false,
         'foundRows'    => false,
         'dateFormat'   => [
@@ -164,7 +164,7 @@ class Database extends Config
      */
     public array $tests = [
         'DSN'         => '',
-        'hostname'    => '127.0.0.1',
+        'hostname'    => '10.255.255.254',
         'username'    => '',
         'password'    => '',
         'database'    => ':memory:',
@@ -179,7 +179,7 @@ class Database extends Config
         'compress'    => false,
         'strictOn'    => false,
         'failover'    => [],
-        'port'        => 3306,
+        'port'        => 3307,
         'foreignKeys' => true,
         'busyTimeout' => 1000,
         'dateFormat'  => [
