@@ -2,12 +2,11 @@
 
 use CodeIgniter\Router\RouteCollection;
 
-$routes = Services::routes();
 $routes->get('/', 'Home::index');
 
 
 // Default routes (keep these)
-$routes->get('/', 'AttendanceController::index');
+$routes->get('/index', 'AttendanceController::index');
 
 // Custom routes for Student Attendance System
 
