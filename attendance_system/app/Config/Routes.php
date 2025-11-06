@@ -6,7 +6,7 @@ $routes->get('/', 'Home::index');
 
 
 // Default routes (keep these)
-$routes->get('/index', 'AttendanceController::index');
+$routes->get('/indexVar', 'AttendanceController::indexVar');
 
 // Custom routes for Student Attendance System
 

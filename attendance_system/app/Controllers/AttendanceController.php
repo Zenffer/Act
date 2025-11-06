@@ -9,12 +9,12 @@ use CodeIgniter\Controller;
 class AttendanceController extends Controller
 {
     // Display homepage with list of students
-    public function index()
+    public function indexVar()
     {
         $studentModel = new StudentModel();
         $data['students'] = $studentModel->findAll();
 
-        return view('attendance/index', $data);
+        return view('attendance/index');
     }
 
     // Show form to add a new student
