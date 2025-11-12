@@ -1,0 +1,25 @@
+#--------------------------------------------------------------------
+# ENVIRONMENT
+#--------------------------------------------------------------------
+CI_ENVIRONMENT = development
+
+#--------------------------------------------------------------------
+# DATABASE
+#--------------------------------------------------------------------
+database.default.hostname = 127.0.0.1
+database.default.database = attendance_db_oliveros
+database.default.username = root
+database.default.password = 
+database.default.DBDriver = MySQLi
+database.default.DBPrefix =
+database.default.port = 3306
+database.default.charset = utf8mb4
+database.default.DBCollat = utf8mb4_general_ci
+database.default.DBDebug = true
+database.default.strictOn = false
+database.default.encrypt = false
+database.default.compress = false
+database.default.pConnect = false
+database.default.swapPre =
+database.default.numberNative = false
+database.default.foundRows = false
