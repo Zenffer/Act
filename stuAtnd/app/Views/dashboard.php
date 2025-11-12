@@ -45,15 +45,36 @@
             margin-bottom: 30px;
         }
 
-        a.logout-btn {
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        a.logout-btn,
+        a.index-btn {
             display: inline-block;
             text-decoration: none;
-            background-color: #c62828;
             color: white;
             font-weight: 600;
             padding: 10px 25px;
             border-radius: 5px;
             transition: background-color 0.2s ease-in-out;
+            width: 100%;
+            max-width: 200px;
+        }
+
+        a.index-btn {
+            background-color: #2e7d32;
+        }
+
+        a.index-btn:hover {
+            background-color: #1b5e20;
+        }
+
+        a.logout-btn {
+            background-color: #c62828;
         }
 
         a.logout-btn:hover {
@@ -71,7 +92,10 @@
     <div class="dashboard-container">
         <h2>Welcome, <?= session()->get('username') ?>!</h2>
         <p>Your email: <?= session()->get('email') ?></p>
-        <a class="logout-btn" href="<?= base_url('logout') ?>">Logout</a>
+        <div class="button-group">
+            <a class="index-btn" href="<?= base_url('home') ?>">Go to Directory</a>
+            <a class="logout-btn" href="<?= base_url('logout') ?>">Logout</a>
+        </div>
     </div>
 </body>
 </html>

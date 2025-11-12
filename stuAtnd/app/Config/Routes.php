@@ -12,6 +12,7 @@ $routes->post('/login/auth', 'AuthController::auth');
 $routes->get('/logout', 'AuthController::logout');
 $routes->get('/dashboard', 'AuthController::dashboard', ['filter' => 'auth']);
 
+$routes->get('home', 'Home::index');
 $routes->get('students', 'Home::students');
 $routes->post('add-student', 'Home::addStudent');
 
